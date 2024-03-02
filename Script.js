@@ -247,20 +247,4 @@ page4.addEventListener("mouseenter",function(){
 }
 cursor4Effect()
 
-document.addEventListener('DOMContentLoaded', function() {
-    var scrollableElement = document.getElementById('scrollable-element');
-    var startY;
-  
-    scrollableElement.addEventListener('touchstart', function(e) {
-      startY = e.touches[0].clientY;
-    }, false);
-  
-    scrollableElement.addEventListener('touchmove', function(e) {
-      var touch = e.touches[0];
-      var change = startY - touch.clientY;
-      scrollableElement.scrollTop += change;
-      startY = touch.clientY;
-      e.preventDefault();
-    }, false);
-  });
-  
+
